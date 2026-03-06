@@ -13,7 +13,10 @@ import { errorHandler } from './middleware/errorMiddleware.js';
 const app = express();
 
 app.use(cors({
-  origin:"https://market-nest-seven.vercel.app" ,
+  origin: [
+    "https://market-nest-seven.vercel.app",
+    "https://market-nest-92vl47ib6-ekta-mishras-projects.vercel.app"
+  ],
   credentials: true
 }));
 
